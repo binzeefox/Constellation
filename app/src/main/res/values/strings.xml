@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">星座运势狐冰杰版</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="today_fortune">今日运势：</string>
+    <string name="love_fortune">爱情运势：</string>
+    <string name="career_condition">工作状况：</string>
+    <string name="funding_fortune">投资理财：</string>
+    <string name="health_level">健康指数：</string>
+    <string name="lucky_color">幸运颜色：</string>
+    <string name="lucky_number">幸运数字：</string>
+    <string name="coop_constellation">契合星座：</string>
+    <string name="fortune_summary">运势描述：</string>
+    <string name="monthly_all">本月运势：</string>
+    <string name="health_recommend">健康建议：</string>
+    <string name="job_hire">求职信息：</string>
+    <string name="happy_magic">幸运魔法：</string>
+    <string name="mima">运势密码：</string>
+    <string name="career">事业运势：</string>
+    <string name="lucky_stone">幸运石：</string>
+    <string name="today">今日运势</string>
+    <string name="week">本周运势</string>
+    <string name="month">本月运势</string>
+    <string name="year">今年运势</string>
+
+    <string name="test">我叫%1$s,我今年%2$d岁,狐族万岁</string>
+</resources>

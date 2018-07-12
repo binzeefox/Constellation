@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/starsbg"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+    <!--顶端-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            tools:src="@drawable/pisces" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/type_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/notice_yellow"
+                android:textSize="21sp"
+                tools:text="双鱼座" />
+
+            <TextView
+                android:id="@+id/date_region_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="17sp"
+                tools:text="10/24~11/21" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/date_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2018年05月27日-2018年06月02日" />
+
+        <TextView
+            android:id="@+id/weekth_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/notice_yellow"
+            tools:text="第21周" />
+    </LinearLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#5e5e5e" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--本月运势-->
+            <LinearLayout
+                android:id="@+id/all_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monthly_all"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/monthly_all_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="本月双鱼座终于有了目标，有了方向，各方面的表现都积极了起来。" />
+            </LinearLayout>
+
+            <!--健康建议-->
+            <LinearLayout
+                android:id="@+id/health_recommend_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_recommend"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/health_recommend_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="控制好你的情绪" />
+            </LinearLayout>
+
+            <!--求职信息-->
+            <LinearLayout
+                android:id="@+id/job_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_hire"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/job_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="就那样把" />
+            </LinearLayout>
+
+            <!--爱情运势-->
+            <LinearLayout
+                android:id="@+id/love_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/love_fortune"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/love_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="恋爱：本周你的感情运比较一般，身边桃花较少，保持现状的可能性比较大。" />
+            </LinearLayout>
+
+            <!--投资理财-->
+            <LinearLayout
+                android:id="@+id/funding_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/funding_fortune"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/funding_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="财运：本周如果你有关注的项目，可能会有让你选择的空间，自己做好判断，不要选择失误，导致破财。" />
+            </LinearLayout>
+
+            <!--工作状况-->
+            <LinearLayout
+                android:id="@+id/career_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/career_condition"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/career_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="工作：本周工作状态相对来说比较轻松，愉快的工作状态让你在和团队合作中也能获得不错的成绩。" />
+            </LinearLayout>
+
+            <!--幸运魔法。。？-->
+            <LinearLayout
+                android:id="@+id/happy_magic_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/happy_magic"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/happy_magic_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="我也不知道这是个什么鬼东西" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

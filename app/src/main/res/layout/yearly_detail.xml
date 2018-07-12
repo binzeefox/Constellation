@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/starsbg"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--顶端-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            tools:src="@drawable/pisces" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/type_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/notice_yellow"
+                android:textSize="21sp"
+                tools:text="双鱼座" />
+
+            <TextView
+                android:id="@+id/date_region_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="17sp"
+                tools:text="10/24~11/21" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date_field"
+        tools:text="2018年"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--幸运石-->
+            <LinearLayout
+                android:id="@+id/stone_row"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/lucky_stone"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/stone_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/notice_yellow"
+                    android:textSize="24sp"
+                    tools:text="青金石" />
+            </LinearLayout>
+
+            <!--运势密码-->
+            <LinearLayout
+                android:id="@+id/mima_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mima"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/mima_info_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/notice_yellow"
+                    android:textStyle="italic"
+                    tools:text="携手共进 事业冲顶" />
+
+                <TextView
+                    android:id="@+id/mima_text_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    tools:text="对大多数双鱼座而言，未来一年将是忙碌却充实，磕磕碰碰中触碰天际的一年。土星在双鱼座的事业宫已经停留了将近2年时间，也让双鱼们吃了不少苦头，原来很轻松的工作变得要求高高，或是被委以重任必须每一件事都全身心投入努力才可能看到成绩，但也是你们实现自我价值和社会地位的重要环节。尤其来到2017年，土天冲持续作用令事业宫与财帛宫联动，使得你们的付出很容易转换成物质回报。命主星木星在危机宫却为事业宫提供支持，很多双鱼座会担任起救火队长的工作，成为支援队伍中的中流砥柱，或是依靠自己良好的人脉为他人铺路，同时获得正反馈实现个人职位和价值的提升，并有望突破阶层的天花板，进入更加高大上的层次，实现自我价值的飞跃。" />
+            </LinearLayout>
+
+            <!--事业运势-->
+            <LinearLayout
+                android:id="@+id/career_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/career"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/career_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="土星离开双鱼座的事业宫，对于双鱼座而言是个好消息。在过去的两年多内，双鱼座在事业发展方面遭遇到了很多压力，很多双鱼座都处于止步不前的状态，或者遭遇到各种挑战，身心疲惫。有时候越努力越得不到他人的认同。进入2018年，双鱼座人逐渐走入了人们的视野。这个期间，双鱼座人会变得克己，会进件社交圈，会把心思放在进修和求知方面。利于外地事务，国际事务，传媒事务方面的发展。出国、再深造、提升专业能力等方面的事务，相对顺利。更多的时候，双鱼座人其实处在一种自我修正的状态，一直在寻找答案，对于过去的得失，会自我分析，力求找到突破口。2018年其实是双鱼座的整修年，通过这一年的学习思考，找出过去的症结，找到未来的方向。年初双鱼座容易有职场竞争意识，总是想要出头，却难免遭遇打压。也有人在年初选择离职换岗。年尾，双鱼座才真正具有职场竞争力，并且职场机遇来临，贵人也出现。所以，2019年值得期待，而在2018年，学习思考才是重点。" />
+            </LinearLayout>
+
+            <!--爱情运势-->
+            <LinearLayout
+                android:id="@+id/love_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/love_fortune"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/love_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="双鱼座人2018年到了年中的时候，才能提起兴致，放松心情拥抱爱情。不过，受到土星的压制，双鱼座人在2018年整体的人际交往，是内敛和克制的。自己是一种向内求的状态，与人交往多多少少都是有些防备。所以，整个年度的爱情体验，并不理想。双鱼座会被一些精神成长的事务所吸引，所以，作为双鱼座的伴侣，可以和他一起去探索哲学，宗教等方面的知识，共同成长，才有机会增进感情。某些双鱼座在2018年也容易陷入感情纠缠里，或者第三者事件中。我要提醒双鱼座，往往我们对某些理念产生认同感，就有可能深陷其中，会容易将不同观点者，变成对立面。学习到更多的知识，增长了见识，却变得更加执着和自我。双鱼座身上有着天生的善良和宽厚，但是如果被某些理念影响，就容易变成自以为是者，造成自己与他人的距离感，对你而言，就很难体验到爱的融合和浪漫啦。" />
+            </LinearLayout>
+
+            <!--健康建议-->
+            <LinearLayout
+                android:id="@+id/health_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health_recommend"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/health_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="学习状态要好很多。如果你当前是学生党，那么2018对你而言是非常美好的一年。你会遇到你心底里认同的老师，深造和考试要顺利很多。心思也很容易专注在学业方面。健康问题要留意。由于日月蚀搅扰着你的健康宫，所以你的心脏，肠胃，免疫系统都需要注意，尤其年底，可能导致皮肤，头部等过敏受伤等状况发生。" />
+            </LinearLayout>
+
+            <!--金钱运势-->
+            <LinearLayout
+                android:id="@+id/funding_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/funding_fortune"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/funding_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="2017年10月份之前，双鱼座的外财运旺，10月10日木星转宫后，双鱼座的财运就没有那么好了。而且，伴随着天王星离开双鱼座的财帛宫，未来的双鱼座，暴富的机会少了很多。2018和2019年，相对来说双鱼座的财运没有什么特别大的起色，自己花钱要谨慎，挣钱要努力，贵人运减少，外财运也平淡。" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

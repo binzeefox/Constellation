@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aries"
+        android:title="白羊座（03/21-04/19）"
+        android:icon="@drawable/aries"/>
+
+    <item
+        android:id="@+id/taurus"
+        android:title="金牛座（04/20-05/20）"
+        android:icon="@drawable/taurus"/>
+
+    <item
+        android:id="@+id/gemini"
+        android:title="双子座（05/21-06/21）"
+        android:icon="@drawable/gemini"/>
+
+    <item
+        android:id="@+id/cancer"
+        android:title="巨蟹座（06/22-07/22）"
+        android:icon="@drawable/cancer"/>
+
+    <item
+        android:id="@+id/leo"
+        android:title="狮子座（07/23-08/22）"
+        android:icon="@drawable/leo"/>
+
+    <item
+        android:id="@+id/virgo"
+        android:title="处女座（08/23-09/22）"
+        android:icon="@drawable/virgo"/>
+
+    <item
+        android:id="@+id/libra"
+        android:title="天秤座（09/23-10/23）"
+        android:icon="@drawable/libra"/>
+
+    <item
+        android:id="@+id/scorpio"
+        android:title="天蝎座（10/24-11/22）"
+        android:icon="@drawable/scorpio"/>
+
+    <item
+        android:id="@+id/sagittarius"
+        android:title="射手座（11/23-12/21）"
+        android:icon="@drawable/sagittarius"/>
+
+    <item
+        android:id="@+id/capricorn"
+        android:title="摩羯座（12/22-01/19）"
+        android:icon="@drawable/capricorn"/>
+
+    <item
+        android:id="@+id/aquarius"
+        android:title="水瓶座（01/20-02/18）"
+        android:icon="@drawable/aquarius"/>
+
+    <item
+        android:id="@+id/pisces"
+        android:title="双鱼座（02/19-03/20）"
+        android:icon="@drawable/pisces"/>
+</menu>

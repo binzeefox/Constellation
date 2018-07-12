@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/starsbg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--顶端-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            tools:src="@drawable/pisces"
+            android:layout_margin="16dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/type_field"
+            tools:text="双鱼座"
+            android:textSize="21sp"
+            android:textColor="@color/notice_yellow"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/date_region_field"
+                tools:text="10/24~11/21"
+                android:textSize="17sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--今日运势-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date_today"
+            tools:text="05/30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/today_fortune"
+            android:layout_marginStart="16dp"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/rating_today_fortune"
+            android:isIndicator="true"
+            android:layout_marginStart="8dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="3"
+            android:numStars="5"
+            android:progressTint="@color/notice_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--今日运势详情-->
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--第一行-->
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <!--爱情运势-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/love_fortune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RatingBar
+                    android:id="@+id/rating_love_fortune"
+                    android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="3"
+                    android:numStars="5"
+                    android:progressTint="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--工作状况-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/career_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RatingBar
+                    android:id="@+id/rating_career_condition"
+                    android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="3"
+                    android:numStars="5"
+                    android:progressTint="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+
+        <!--第二行-->
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <!--投资理财-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/funding_fortune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RatingBar
+                    android:id="@+id/rating_funding_fortune"
+                    android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="3"
+                    android:numStars="5"
+                    android:progressTint="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--健康指数-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/health_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RatingBar
+                    android:id="@+id/rating_health_level"
+                    android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="3"
+                    android:numStars="5"
+                    android:progressTint="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+        <!--第三行-->
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <!--幸运颜色-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/lucky_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/lucky_color_field"
+                    tools:text="红色"
+                    android:textColor="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--幸运数字-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/lucky_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/lucky_number_field"
+                    tools:text="8"
+                    android:textColor="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+        <!--第四行-->
+        <TableRow>
+            <!--契合星座-->
+            <LinearLayout>
+                <TextView
+                    android:text="@string/coop_constellation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/coop_constellation_field"
+                    tools:text="天蝎座"
+                    android:textColor="@color/notice_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#5e5e5e"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:text="@string/fortune_summary"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fortune_summary_field"
+        tools:text="运势下滑，事业上有可能遭遇不怀好意的诋毁，工作压力较大，连带情绪不佳，容易闷闷不乐。"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<RatingBar-->
+        <!--android:isIndicator="true"-->
+        <!--style="?android:attr/ratingBarStyleSmall"-->
+        <!--android:rating="3"-->
+        <!--android:numStars="5"-->
+        <!--android:progressTint="@color/notice_yellow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+</LinearLayout>
