@@ -221,9 +221,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private Handler mHandler = new Handler(){
+    private Handler mHandler = new Handler(new Handler.Callback() {
         @Override
-        public void handleMessage(Message msg) {
+        public boolean handleMessage(Message msg) {
             int cur = imageViewPager.getCurrentItem();
             int max = imageViewPager.getAdapter().getCount();
             cur++;
@@ -231,7 +231,8 @@ public class MainActivity extends AppCompatActivity {
                 cur = 0;
             imageViewPager.setCurrentItem(cur);
 
-            this.sendEmptyMessageDelayed(0, 4500);
+            mHandler.sendEmptyMessageDelayed(0, 4500);
+            return false;
         }
-    };
+    });
 }
